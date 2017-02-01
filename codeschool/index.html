@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery CodeSchool</title>
+  <style>
+    .highlighted {
+      background-color: yellow;
+    }
+
+    .ticket, .canceled {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem ipsum dolor sit.</h1>
+  <h2>Lorem ipsum.</h2>
+  <p>Lorem ipsum.Lorem ipsum dolor.</p>
+  <ul id="destinations">
+    <li>
+      <ul id="france"> 
+        <li>Paris</li>
+      </ul>
+    </li>
+    <li class="vacation onsale" data-price='399.99'>
+      <h2>Hawaiian Vacation</h2> 
+      <button>Get Price</button>
+      <ul class="comments">
+        <li>Amazing Deal!</li>
+        <li>Want to go!</li>
+      </ul>
+    </li>
+    <li class="vacation expiring" data-price='589.99'>
+      <h2>Argentinian Vacation</h2> 
+      <button>Get Price</button>
+      <ul class="comments">
+        <li>Amazing Deal!</li>
+        <li>Want to go!</li>
+      </ul>
+    </li>
+    <li class="promo">list 3</li>
+  </ul>
+
+  <div id="filters">
+    <button class="onsale-filter">On sale Now</button>
+    <button class="expiring-filter">Expiring Soon</button>
+  </div>
+
+  <li class="confirmation">
+    <button>FLIGHT DETAILS</button>
+    <ul class="ticket">
+      <li>Lorem ipsum dolor.</li>
+      <li>Lorem ipsum dolor.</li>
+      <li>Lorem ipsum dolor.</li>
+    </ul>
+  </li>
+
+  <div class="vacation" data-price="399.99">
+    <h3>Colombian Vacation</h3>
+    <p>$399.99 per Ticket</p>
+    <p>
+      Tickets:
+      <input type="number" class="quantity" value="1" />
+    </p>
+  </div>
+  <p>Total price: $<span id="total">399.99</span></p>
+  
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="application.js "></script>
+</body>
+</html>
